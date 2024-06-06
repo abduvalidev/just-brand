@@ -1291,6 +1291,11 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:bg-brand-gray-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 250 255 / var(--tw-bg-opacity));
+  }
+
   .md\:px-11 {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
