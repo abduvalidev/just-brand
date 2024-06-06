@@ -32,9 +32,8 @@ searchBtn.addEventListener('click', () => {
 });
 
 
-
 function cadrAdd(queue, unNAme, desc) {
-  return `<a href="#" class="bg-brand-gray-200 md:text-xl text-left transition duration-300 hover:bg-gray-100 hover:shadow-md rounded-lg py-6 px-4">
+  return `<a href="#" class="bg-brand-gray-200 md:text-xl text-center sm:text-left transition duration-300 hover:bg-gray-100 hover:shadow-md rounded-lg py-6 px-4">
     <h4 class="font-display font-medium text-xl text-brand-dark-500">${unNAme}</h4>
     <p class="${queue} font-roboto font-medium mt-1">${desc}</p>
   </a>`;
@@ -69,19 +68,15 @@ const linkCards = [
   { queue: 'color_th-2', unNAme: 'Charles Sturt University', desc: 'University' },
   { queue: 'color_th-3', unNAme: 'Charles Sturt University', desc: 'High School' },
   { queue: 'color_th-4', unNAme: 'Charles Sturt University', desc: 'University' },
-  { queue: 'color_th-1', unNAme: 'Charles Sturt University', desc: 'High School' },
-  { queue: 'color_th-2', unNAme: 'Charles Sturt University', desc: 'University' },
-  { queue: 'color_th-3', unNAme: 'Charles Sturt University', desc: 'High School' },
-  { queue: 'color_th-4', unNAme: 'Charles Sturt University', desc: 'University' },
 ];
 
-const visibleDefoult = 16;
+let visibleDefault = window.innerWidth >= 768 ? 16 : 6;
 let isShowingAll = false;
 
 function toBind() {
   const container = document.querySelector('.univer');
   container.innerHTML = '';
-  const cardsToShow = isShowingAll ? linkCards : linkCards.slice(0, visibleDefoult);
+  const cardsToShow = isShowingAll ? linkCards : linkCards.slice(0, visibleDefault);
   cardsToShow.forEach(({queue, unNAme, desc}) => {
     const cardHTML = cadrAdd(queue, unNAme, desc);
     container.innerHTML += cardHTML;
@@ -91,7 +86,14 @@ function toBind() {
 document.querySelector('.toggleButton').addEventListener('click', () => {
   isShowingAll = !isShowingAll;
   toBind();
-  document.querySelector('.toggleButton').textContent = isShowingAll ? 'Show Less' : 'Show More';
+  document.querySelector('.toggleButton').textContent = isShowingAll ? 'View Less' : 'View More';
+});
+
+window.addEventListener('resize', () => {
+  visibleDefault = window.innerWidth >= 768 ? 16 : 6;
+  if (!isShowingAll) {
+    toBind();
+  }
 });
 
 toBind();
