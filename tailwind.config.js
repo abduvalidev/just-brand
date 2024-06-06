@@ -9,6 +9,7 @@ module.exports = {
         'inter': 'Inter'
       },
       fontSize: {
+        '3l': '1.75rem',
         'heading-sm': '2.5rem',
         'heading-1': '4rem'
       },
