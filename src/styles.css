@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+  
+  body {
+    @apply font-roboto
+  }
+}
+
+.common-btn {
+  @apply  font-display text-white bg-gradient-to-r to-brand-blue-400 from-brand-blue-500 hover:to-blue-600 hover:from-blue-700 md:focus:ring-4 focus:ring-blue-300 font-medium rounded-lg
+} 
+
+.color_th-1 {
+  @apply text-brand-red
+}
+
+.color_th-2 {
+  @apply text-brand-pink
+}
+
+.color_th-3 {
+  @apply text-brand-orange
+}
+
+.color_th-4 {
+  @apply text-brand-blue-300
+}
