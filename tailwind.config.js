@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'display': 'SF UI Display',
-        'roboto': 'Roboto',
+        'roboto': "Roboto",
         'inter': 'Inter'
       },
       fontSize: {

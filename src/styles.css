@@ -8,10 +8,12 @@
   }
   
   body {
-    @apply font-roboto
+    @apply font-roboto overflow-x-hidden
   }
 }
-
+h1, h2, h3, h4, h5 {
+  @apply font-display
+}
 .common-btn {
   @apply  font-display text-white bg-gradient-to-r to-brand-blue-400 from-brand-blue-500 hover:to-blue-600 hover:from-blue-700 md:focus:ring-4 focus:ring-blue-300 font-medium rounded-lg
 } 
@@ -30,4 +32,9 @@
 
 .color_th-4 {
   @apply text-brand-blue-300
+}
+
+.card::after {
+  content: '';
+  @apply absolute top-0 left-0 w-1 h-full rounded-l
 }
