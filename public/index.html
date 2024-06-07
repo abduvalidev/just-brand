@@ -207,10 +207,17 @@
           </form>
         </div>
 
-        <div class="max-w-7xl univer grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-auto mt-8 md:mt-14 pt-5">
-          <!-- cards -->
+        <div class="max-w-7xl univer grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-auto mt-8 md:mt-14 pt-5 pb-10">
+          <script>
+            function cadrAdd(queue, unNAme, desc) {
+              return `<a href="#" class="bg-brand-gray-200 md:text-xl text-center sm:text-left transition duration-300 hover:bg-gray-100 hover:shadow-md rounded-lg py-6 px-4">
+                <h4 class="font-display font-medium text-xl text-brand-dark-500">${unNAme}</h4>
+                <p class="${queue} font-roboto font-medium mt-1">${desc}</p>
+              </a>`;
+            };
+          </script>
         </div>
-        <button class="toggleButton font-roboto w-full sm:w-auto block border border-brand-blue-500 text-brand-blue-500 rounded-lg transition duration-300 hover:bg-brand-blue-500 hover:text-white py-3.5 px-4 md:px-11 mt-14 mx-auto">
+        <button class="toggleButton font-roboto w-full sm:w-auto block border border-brand-blue-500 text-brand-blue-500 rounded-lg transition duration-300 hover:bg-brand-blue-500 hover:text-white py-3.5 px-4 md:px-11 mx-auto">
           View More
         </button>
       </div>
@@ -373,6 +380,32 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Our Network -->
+    <section class="px-4 lg:px-6 py-14 md:py-24">
+      <div class="max-w-7xl text-center mx-auto">
+        <div class="md:w-max border rounded-full mx-auto px-4 py-2">
+          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+            our network
+          </p>
+        </div>
+        <h3 class="font-bold text-brand-dark-500 text-4xl md:text-heading-sm md:leading-[3rem] line-clamp-2 mt-3">
+          Trusted by students across the globe
+        </h3>
+
+        <div class="countGrid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 mt-4 md:mt-10">
+          <script>
+            function addCount(countIcon, countName,) {
+              return `<div class="flex items-center justify-center gap-3.5 border-[3px] border-brand-blue-500/10 rounded-lg p-6">
+                <img class="h-6 md:h-8" src="${countIcon}" alt="">
+                <h6 class="font-semibold text-lg md:text-2xl">${countName}</h6>
+              </div>`;
+            };
+          </script>
+        </div>
+      </div>
+
     </section>
   </main>
   <script src="./js/index.js"></script>

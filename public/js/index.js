@@ -32,12 +32,7 @@ searchBtn.addEventListener('click', () => {
 });
 
 
-function cadrAdd(queue, unNAme, desc) {
-  return `<a href="#" class="bg-brand-gray-200 md:text-xl text-center sm:text-left transition duration-300 hover:bg-gray-100 hover:shadow-md rounded-lg py-6 px-4">
-    <h4 class="font-display font-medium text-xl text-brand-dark-500">${unNAme}</h4>
-    <p class="${queue} font-roboto font-medium mt-1">${desc}</p>
-  </a>`;
-};
+
 
 const linkCards = [
   { queue: 'color_th-1', unNAme: 'Charles Sturt University', desc: 'High School' },
@@ -97,3 +92,31 @@ window.addEventListener('resize', () => {
 });
 
 toBind();
+
+
+// country Funtion
+
+const arrCount = [
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+  {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
+];
+
+
+function toCount() {
+  const countGri = document.querySelector('.countGrid');
+  countGri.innerHTML = '';
+  arrCount.forEach(({countIcon, countName}) => {
+    const cardHTML = addCount(countIcon, countName);
+    countGri.innerHTML += cardHTML;
+  });
+};
+
+toCount()
