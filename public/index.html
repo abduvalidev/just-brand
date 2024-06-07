@@ -411,7 +411,7 @@
     <section class="bg-brand-gray-50 px-4 md:px-6 py-8 md:py-20 lg:py-28">
       <div class="max-w-7xl lg:flex items-center justify-between gap-10 mx-auto">
         <div class="lg:max-w-[32.5rem] text-center md:text-left">
-          <div class="md:w-max border rounded-full px-4 py-2">
+          <div class="w-max border rounded-full px-4 py-2 mx-auto">
             <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
               our network
             </p>
@@ -435,6 +435,35 @@
 
         <div class="hidden lg:block w-1/2 h-[40rem] overflow-hidden rounded-lg">
           <img class="w-full h-full object-cover" src="./img/notes.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="px-4 md:px-6 py-10 md:py-16 lg:py-24">
+      <div class="max-w-7xl text-center mx-auto">
+        <div class="w-max bg-brand-gray-50 border rounded-full mx-auto px-4 py-2">
+          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+            Boost your grades
+          </p>
+        </div>
+        <h3 class="font-bold text-brand-dark-500 text-4xl md:text-heading-sm md:leading-[3.4rem] mt-3">
+          How Thinkswap works
+          <span class="text-gradient">works</span> 
+        </h3>
+        <p class="font-roboto text-brand-gray-700 md:text-lg mt-1">
+          Find the study resource that suits your needs
+        </p>
+
+        <div class="swip-grid grid md:grid-cols-2 gap-4 lg:gap-6 md:text-left mt-7 md:mt-16">
+          <script>
+            function addCard(swapImg, swapTitle, swapDesc) {
+              return `<div class="bg-brand-gray-200 rounded-lg space-y-3 px-8 py-6">
+            <img class="w-16 md:w-20 h-16 md:h-16 mx-auto md:mx-0" src="${swapImg}" alt="">
+            <h5 class="font-semibold text-brand-dark-500 leading-8">${swapTitle}</h5>
+            <p class="font-roboto text-brand-gray-700">${swapDesc}</p>
+          </div>`;};
+          </script>
         </div>
       </div>
     </section>

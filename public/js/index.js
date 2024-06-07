@@ -120,3 +120,41 @@ function toCount() {
 };
 
 toCount()
+
+// How Thinkswap works
+
+
+const swapCard = [
+  {  
+    swapImg: './img/find.svg',
+    swapTitle: 'Find the study resource that suits your needs',
+    swapDesc: 'Explore our vast student authored document library and find a document that serves as a study guide or exemplar to allow you to improve your own understanding of the topic you are studying.' 
+  },
+  {  
+    swapImg: './img/money.svg',
+    swapTitle: 'Earn or purchase Exchange Credits to make your trade',
+    swapDesc: 'Explore our vast student authored document library and find a document that serves as a study guide or exemplar to allow you to improve your own understanding of the topic you are studying.' 
+  },
+  {  
+    swapImg: './img/credits.svg',
+    swapTitle: 'Pay for your document using Exchange Credits',
+    swapDesc: 'Explore our vast student authored document library and find a document that serves as a study guide or exemplar to allow you to improve your own understanding of the topic you are studying.' 
+  },
+  {  
+    swapImg: './img/anytime.svg',
+    swapTitle: 'Access your library anywhere, anytime',
+    swapDesc: 'Explore our vast student authored document library and find a document that serves as a study guide or exemplar to allow you to improve your own understanding of the topic you are studying.' 
+  },
+];
+
+function thinkSwap() {
+  const swipGrid = document.querySelector('.swip-grid');
+  swipGrid.innerHTML = '';
+  swapCard.forEach(({swapImg, swapTitle, swapDesc}) => {
+    const swapdHTML = addCard(swapImg, swapTitle, swapDesc);
+    swipGrid.innerHTML += swapdHTML;
+  }) 
+
+}
+
+thinkSwap()
