@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6 {
   @apply  font-display text-white bg-gradient-to-r to-brand-blue-400 from-brand-blue-500 hover:to-blue-600 hover:from-blue-700 md:focus:ring-4 focus:ring-blue-300 font-medium rounded-lg
 } 
 
+.text-gradient {
+  @apply bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 text-transparent
+}
 .color_th-1 {
   @apply text-brand-red
 }
