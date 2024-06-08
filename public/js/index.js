@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
 // search btn 2
 
 const searchBtn = document.querySelector('.search-btn');
@@ -35,7 +34,6 @@ searchBtn.addEventListener('click', () => {
     searchFocus.classList.add('top-0');
   }
 });
-
 
 
 

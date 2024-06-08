@@ -11,8 +11,13 @@
     @apply font-roboto overflow-x-hidden
   }
 }
+
 h1, h2, h3, h4, h5, h6 {
   @apply font-display
+}
+
+p {
+  @apply font-roboto 
 }
 .common-btn {
   @apply  font-display text-white bg-gradient-to-r to-brand-blue-400 from-brand-blue-500 hover:to-blue-600 hover:from-blue-700 md:focus:ring-4 focus:ring-blue-300 font-medium rounded-lg

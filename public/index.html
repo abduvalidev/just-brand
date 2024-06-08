@@ -43,11 +43,11 @@
 
       <!-- register -->
       <div class="hidden lg:flex items-center gap-6">
-        <a href="#" class="flex items-center gap-3 text-brand-brown-400 text-lg transition duration-300 hover:text-brand-blue-500 hover:underline underline-offset-4">
+        <a href="#" class="flex items-center gap-3 text-brand-brown-400 text-lg transition duration-300 hover:text-brand-blue-500 underline decoration-transparent hover:decoration-current underline-offset-4">
           <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18.0002 0.86499V2.86499H17.0002L11.0002 11.865V18.865H7.00024V11.865L1.00024 2.86499H0.000244141V0.86499H18.0002Z" fill="#5B5F79" fill-opacity="0.36"/>
+            <path d="M18.0002 0.86499V2.86499H17.0002L11.0002 11.865V18.865H7.00024V11.865L1.00024 2.86499H0.000244141V0.86499H18.0002Z" fill="currentColor" fill-opacity="0.36"/>
           </svg>            
-          <span class="">
+          <span class="transition duration-300">
             Browse subjects
           </span>
         </a>
@@ -64,7 +64,7 @@
           Register
         </button>
 
-        <a href="#" class="block font-medium text-brand-blue-400 text-sm transition duration-300 hover:text-brand-blue-500 hover:underline underline-offset-4">
+        <a href="#" class="block font-medium text-brand-blue-400 text-sm transition duration-300 hover:text-brand-blue-500 underline underline-offset-4 decoration-transparent hover:decoration-current">
           Sign in
         </a>
       </div>
@@ -96,7 +96,7 @@
             <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.0002 0.86499V2.86499H17.0002L11.0002 11.865V18.865H7.00024V11.865L1.00024 2.86499H0.000244141V0.86499H18.0002Z" fill="#5B5F79" fill-opacity="0.36"/>
             </svg>            
-            <p class="text-brand-brown-400 text-lg">
+            <p class="font-display text-brand-brown-400 text-lg">
               Browse subjects
             </p>
           </a>
@@ -128,7 +128,7 @@
       <div class="max-w-base grid md:grid-cols-2 items-center gap-10 mx-auto px-4 md:px-6">
         <div class="text-center md:text-left space-y-4 xl:pr-10">
           <div class="bg-brand-gray-50 w-max border border-brand-blue-400/5 rounded-full mx-auto md:mx-0 py-2.5 px-4">
-            <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+            <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
               Get instant study help
             </p>
           </div>
@@ -137,7 +137,7 @@
             Welcome to the best <span class="text-gradient">study library</span> in Australia
           </h1>
   
-          <p class="font-roboto text-xl text-brand-gray-700">
+          <p class="text-xl text-brand-gray-700">
             Join an active community of thousands of students who use Thinkswap daily to study and improve their grades.
           </p>
   
@@ -157,7 +157,7 @@
     <!-- browse study resources -->
     <section class="w-full px-4 md:px-6 py-16">
       <div class="text-center space-y-4">
-        <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+        <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
           our 
           <span class="hidden md:inline-block">study resources</span> 
           <span class="inline-block md:hidden">Services</span>
@@ -168,7 +168,7 @@
             Search your documents here...
           </span>
         </h3>
-        <p class="block md:hidden font-roboto text-xl text-brand-gray-700">Join thousands of students who use thinkswap to study and learn every day.</p>
+        <p class="block md:hidden text-xl text-brand-gray-700">Join thousands of students who use thinkswap to study and learn every day.</p>
 
         <div class="max-w-[39rem] mx-auto md:mt-4">
           <form class="relative w-full search-btn"> 
@@ -212,7 +212,7 @@
             function cadrAdd(queue, unNAme, desc) {
               return `<a href="#" class="bg-brand-gray-200 md:text-xl text-center sm:text-left transition duration-300 hover:bg-gray-100 hover:shadow-md rounded-lg py-6 px-4">
                 <h4 class="font-display font-medium text-xl text-brand-dark-500">${unNAme}</h4>
-                <p class="${queue} font-roboto font-medium mt-1">${desc}</p>
+                <p class="${queue} font-medium mt-1">${desc}</p>
               </a>`;
             };
           </script>
@@ -228,7 +228,7 @@
       <div class="max-w-base mx-auto px-4 md:px-6">
         <div class="text-center">
           <div class="bg-white md:w-max rounded-full mx-auto px-4 py-2">
-            <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+            <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
               contributed by classmates
             </p>
           </div>
@@ -247,7 +247,7 @@
             <h4 class="font-semibold text-2xl md:text-3l text-brand-dark-500 mt-5 md:mt-11">
               Earn money by selling your best study notes
             </h4>
-            <p class="font-roboto text-brand-gray-700 mt-4">
+            <p class="text-brand-gray-700 mt-4">
               If you have exceptional study notes, you can join Thinkswap Elite and earn money each time your notes sell. We have a strong student community, with millions of students browsing Thinkswap’s study library.
             </p>
 
@@ -261,7 +261,7 @@
             <h4 class="font-semibold text-2xl md:text-3l text-brand-dark-500 mt-5 md:mt-11">
               Have something to share? You can use Thinkswap for free!
             </h4>
-            <p class="font-roboto text-brand-gray-700 mt-4">
+            <p class="text-brand-gray-700 mt-4">
               Thinkswap works best when students share. Students who upload their own study resources can access new study resources for free. Learn more about uploads and pricing.
             </p>
 
@@ -287,7 +287,7 @@
           <span class="font-roboto uppercase text-sm text-brand-blue-500">
             english (advanced)
           </span>
-          <p class="font-roboto text-brand-gray-700 mt-2">
+          <p class="text-brand-gray-700 mt-2">
             9 pages of analyzed quotes from Shakespeare's Othello. Made for the end-of-year preliminary exam.
           </p>
 
@@ -357,7 +357,7 @@
           <div class="space-y-4 md:space-y-8 mt-6 md:mt-10">
             <div class="card relative after:bg-[#FFBA08] p-4 md:pl-6">
               <h5 class="font-semibold text-white text-2xl leading-9">All our study resources are hand checked</h5>
-              <p class="font-roboto text-white/70 mt-1">
+              <p class="text-white/70 mt-1">
                 Every document on Thinkswap has been meticulously hand checked to ensure they meet the highest standards for student study. No wading through irrelevant content that is of no use to your subject.
               </p>
             </div>
@@ -365,7 +365,7 @@
               <h5 class="font-semibold text-white text-2xl leading-9">
                 All our study resources are categorised under their subjects
               </h5>
-              <p class="font-roboto text-white/70 mt-1">
+              <p class="text-white/70 mt-1">
                 Explore our vast student authored document library and find a document that serves as a study guide or exemplar to allow you to improve your own understanding of the topic you are studying.
               </p>
             </div>
@@ -373,7 +373,7 @@
               <h5 class="font-semibold text-white text-2xl leading-9">
                 Access your library anywhere, anytime
               </h5>
-              <p class="font-roboto text-white/70 mt-1">
+              <p class="text-white/70 mt-1">
                 All Thinkswap resources are available for you to access both online and as a downloadable PDF anywhere, anytime.
               </p>
             </div>
@@ -386,7 +386,7 @@
     <section class="px-4 md:px-6 py-16 md:py-24">
       <div class="max-w-7xl text-center mx-auto py-3 md:py-0">
         <div class="w-max border rounded-full mx-auto px-4 py-2">
-          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
             our network
           </p>
         </div>
@@ -411,8 +411,8 @@
     <section class="bg-brand-gray-50 px-4 md:px-6 py-8 md:py-20 lg:py-28">
       <div class="max-w-7xl lg:flex items-center justify-between gap-10 mx-auto">
         <div class="lg:max-w-[32.5rem] text-center md:text-left">
-          <div class="w-max border rounded-full px-4 py-2 mx-auto">
-            <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+          <div class="w-max border rounded-full px-4 py-2 mx-auto md:mx-0">
+            <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
               our network
             </p>
           </div>
@@ -426,7 +426,7 @@
             <img class="w-full h-full object-cover" src="./img/notes.png" alt="">
           </div>
 
-          <p class="font-roboto text-brand-gray-700 md:text-lg mt-3 md:mt-5">
+          <p class="text-brand-gray-700 md:text-lg mt-3 md:mt-5">
             Using prior examples of student work is an amazing way to study and improve, however all students using Thinkswap are required to act with academic integrity.
             <br><br>
             Student education programmes, collaboration with university academics, watermarking, and submission of all documents to plagiarism detection tools are amongst the many ways we protect student work on Thinkswap.
@@ -443,7 +443,7 @@
     <section class="px-4 md:px-6 py-10 md:py-16 lg:py-24">
       <div class="max-w-7xl text-center mx-auto">
         <div class="w-max bg-brand-gray-50 border rounded-full mx-auto px-4 py-2">
-          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
             Boost your grades
           </p>
         </div>
@@ -451,7 +451,7 @@
           How Thinkswap works
           <span class="text-gradient">works</span> 
         </h3>
-        <p class="font-roboto text-brand-gray-700 md:text-lg mt-1">
+        <p class="text-brand-gray-700 md:text-lg mt-1">
           Find the study resource that suits your needs
         </p>
 
@@ -461,7 +461,7 @@
               return `<div class="bg-brand-gray-200 rounded-lg space-y-3 px-8 py-6">
             <img class="w-16 md:w-20 h-16 md:h-16 mx-auto md:mx-0" src="${swapImg}" alt="">
             <h5 class="font-semibold text-brand-dark-500 leading-8">${swapTitle}</h5>
-            <p class="font-roboto text-brand-gray-700">${swapDesc}</p>
+            <p class="text-brand-gray-700">${swapDesc}</p>
           </div>`;};
           </script>
         </div>
@@ -472,7 +472,7 @@
     <section class=" bg-brand-gray-50 px-4 md:px-6  py-10 md:py-20">
       <div class="max-w-7xl text-center mx-auto">
         <div class="w-max bg-white border rounded-full mx-auto px-4 py-2">
-          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-roboto font-semibold uppercase">
+          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
             Boost your grades
           </p>
         </div>
@@ -503,7 +503,7 @@
                             <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                         </svg>
                       </div>
-                      <p class="font-roboto text-brand-gray-700 text-center">${wraDescr}</p>
+                      <p class="text-brand-gray-700 text-center">${wraDescr}</p>
                       <div>
                         <div class="w-16 h-16 rounded-full overflow-hidden mx-auto">
                           <img class="w-full h-full object-cover" src="${wrapImg}" alt="">
@@ -533,7 +533,7 @@
     </section>
 
     <!--  -->
-    <section class="bg-footer py-14 md:py-24">
+    <section class="bg-footer bg-cover bg-no-repeat py-14 md:py-24">
       <div class="max-w-xl text-center mx-auto px-4 md:px-6">
         <h3 class="font-semibold text-white text-4xl md:text-heading-sm md:leading-[3.4rem]">
           Get instant study help
@@ -548,6 +548,30 @@
       </div>
     </section>
   </main>
+
+  <!-- footer -->
+  <footer class="px-4 md:px-6 py-8 md:py-16">
+    <div class="max-w-7xl font-roboto flex items-center justify-between gap-5 mx-auto">
+      <a href="#">
+        <img class="h-12" src="./img/logo.svg" alt="">
+      </a>
+      <div class="flex ic gap-8 text-[#6B7280]">
+        <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current" href="#">
+          About
+        </a>
+        <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current" href="#">
+          Premium
+        </a>
+        <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current" href="#">
+          Blog
+        </a>
+        <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current" href="#">
+          Affiliate Program
+        </a>
+      </div>
+
+    </div>
+  </footer>
   <script src="./js/index.js"></script>
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
