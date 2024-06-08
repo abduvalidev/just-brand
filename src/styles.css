@@ -28,11 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  margin-left: 8px;
+  @apply bg-none border-none cursor-pointer text-2xl ml-2
 }
 
 .search-container.focused .search-input {
