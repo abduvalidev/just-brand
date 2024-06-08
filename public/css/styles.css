@@ -589,6 +589,12 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.-ml-3 {
+  margin-left: -0.75rem;
+}
+.-mr-3 {
+  margin-right: -0.75rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -707,6 +713,9 @@ video {
 }
 .max-w-base {
   max-width: 73rem;
+}
+.max-w-xl {
+  max-width: 36rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -851,6 +860,9 @@ video {
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-footer {
+  background-image: url('../img/background.png');
 }
 .from-\[\#FBF5F000\] {
   --tw-gradient-from: #FBF5F000 var(--tw-gradient-from-position);
@@ -1018,7 +1030,7 @@ video {
   line-height: 1;
 }
 .text-heading-sm {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -1190,12 +1202,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-container.focused .search-input {
-
-  width: 200px;
-
+  width: 13rem;
   max-width: 7rem;
-
-  opacity: 1}
+  opacity: 1;
+}
 
 @media (min-width: 640px) {
 
@@ -1484,6 +1494,12 @@ h1, h2, h3, h4, h5, h6 {
     gap: 2.5rem;
   }
 
+  .md\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+  }
+
   .md\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1565,7 +1581,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .md\:text-heading-sm {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 
   .md\:text-lg {
@@ -1676,3 +1692,4 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 5rem;
   }
 }
+

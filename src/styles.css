@@ -37,8 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .search-container.focused .search-input {
 
-  width: 200px;
-  @apply opacity-100 max-w-28 sm:max-w-48 
+  @apply opacity-100 w-52 max-w-28 sm:max-w-48 
 }
 
 
@@ -62,3 +61,4 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   @apply absolute top-0 left-0 w-1.5 h-full rounded-l
 }
+

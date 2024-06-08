@@ -10,7 +10,7 @@ module.exports = {
       },
       fontSize: {
         '3l': '1.75rem',
-        'heading-sm': '2.5rem',
+        'heading-sm': '2.6rem',
         'heading-1': '4rem'
       },
       spacing: {
@@ -42,6 +42,9 @@ module.exports = {
           orange: '#FFA500'
         }
       },
+      backgroundImage: {
+        'footer': "url('../img/background.png')",
+      }
     },
   },
   plugins: [],
