@@ -21,6 +21,27 @@ h1, h2, h3, h4, h5, h6 {
 .text-gradient {
   @apply bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 text-transparent
 }
+
+.search-input {
+  transition: width 0.3s ease;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+.search-container.focused .search-input {
+
+  width: 200px;
+  @apply opacity-100 max-w-28 sm:max-w-48 
+}
+
+
 .color_th-1 {
   @apply text-brand-red
 }

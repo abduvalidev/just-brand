@@ -1,19 +1,24 @@
+// search btn 1
+document.addEventListener('DOMContentLoaded', function () {
+  const searchIcon = document.querySelector('.search-icon');
+  const searchInput = document.querySelector('.search-input');
+  const searchContainer = document.querySelector('.search-container');
 
-// search btn
-const searchButton = document.querySelector('.searchButton');
-const searchInput = document.querySelector('.default-search');
+  searchIcon.addEventListener('click', function () {
+      searchContainer.classList.toggle('focused');
+      if (searchContainer.classList.contains('focused')) {
+          searchInput.focus();
+      }
+  });
 
-searchButton.addEventListener('click', () => {
-  searchInput.classList.toggle('pointer-events-none');
-  if (!searchInput.classList.contains('pointer-events-none')) {
-    searchInput.classList.add('w-32', 'border', 'px-3', 'py-1', 'rounded-lg', 'pointer-events-auto');
-    searchInput.focus();
-  } else {
-    searchInput.classList.remove('w-32', 'border', 'px-3', 'py-1', 'rounded-lg', 'pointer-events-auto');
-  }
+  searchInput.addEventListener('blur', function () {
+      searchContainer.classList.remove('focused');
+  });
 });
 
 
+
+// search btn 2
 
 const searchBtn = document.querySelector('.search-btn');
 const searchFocus = document.querySelector('.grou-focus');
@@ -95,7 +100,6 @@ toBind();
 
 
 // country Funtion
-
 const arrCount = [
   {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
   {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
@@ -109,7 +113,6 @@ const arrCount = [
   {  countIcon: './img/austrailia.svg', countName: 'Austrailia' },
 ];
 
-
 function toCount() {
   const countGri = document.querySelector('.countGrid');
   countGri.innerHTML = '';
@@ -121,9 +124,10 @@ function toCount() {
 
 toCount()
 
+
+
+
 // How Thinkswap works
-
-
 const swapCard = [
   {  
     swapImg: './img/find.svg',
@@ -158,3 +162,85 @@ function thinkSwap() {
 }
 
 thinkSwap()
+
+
+
+
+// swiper js
+
+
+const wrapCard = [
+  {
+    wraDescr: '"Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good looking project in no time.Every designer should have this in their toolbox!"',
+    wrapImg: './img/joseph.png',
+    wraName: 'Roberta Casas',
+    wraUserNAme: 'Web developer @themesberg'
+  },
+  {
+    wraDescr: '"Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good looking project in no time.Every designer should have this in their toolbox!"',
+    wrapImg: './img/joseph.png',
+    wraName: 'Roberta Casas',
+    wraUserNAme: 'Web developer @themesberg'
+  },
+  {
+    wraDescr: '"Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good looking project in no time.Every designer should have this in their toolbox!"',
+    wrapImg: './img/joseph.png',
+    wraName: 'Roberta Casas',
+    wraUserNAme: 'Web developer @themesberg'
+  },
+  {
+    wraDescr: '"Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good looking project in no time.Every designer should have this in their toolbox!"',
+    wrapImg: './img/joseph.png',
+    wraName: 'Roberta Casas',
+    wraUserNAme: 'Web developer @themesberg'
+  },
+  {
+    wraDescr: '"Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good looking project in no time.Every designer should have this in their toolbox!"',
+    wrapImg: './img/joseph.png',
+    wraName: 'Roberta Casas',
+    wraUserNAme: 'Web developer @themesberg'
+  },
+];
+
+function slider() {
+  const wrapGrid = document.querySelector('.wrapper');
+  wrapGrid.innerHTML = '';
+  wrapCard.forEach(({wraDescr, wrapImg, wraName, wraUserNAme}) => {
+    const wrapdHTML = addWrapper(wraDescr, wrapImg, wraName, wraUserNAme);
+    wrapGrid.innerHTML += wrapdHTML;
+  }) 
+}
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+    breakpoints: {
+      310: {
+        slidesPerView: 1.2,
+        spaceBetween: 15
+      },  
+      640: {
+        slidesPerView: 1.7,
+        spaceBetween: 15
+      },
+      768: {
+        slidesPerView: 2.2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+    }
+  });
+
+  slider();
+});
