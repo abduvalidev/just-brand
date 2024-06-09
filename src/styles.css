@@ -58,6 +58,23 @@ p {
   @apply text-brand-blue-300
 }
 
+
+.bg-color_th-1 {
+  @apply bg-[#FEF8ED]
+}
+
+.bg-color_th-2 {
+  @apply bg-[#E6F6FF]
+}
+
+.bg-color_th-3 {
+  @apply bg-[#E8FFF7]
+}
+
+.bg-color_th-4 {
+  @apply bg-[#FFF4FC]
+}
+
 .card::after {
   content: '';
   @apply absolute top-0 left-0 w-1.5 h-full rounded-l
