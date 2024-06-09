@@ -16,8 +16,6 @@ searchBtn.addEventListener('click', () => {
   }
 });
 
-
-
 const linkCards = [
   { bgColor: 'bg-color_th-1', queue: 'color_th-1', unNAme: 'Criminal Law & Procedure 🔥', desc: '44 Documents' },
   { bgColor: 'bg-color_th-2',  queue: 'color_th-2', unNAme: 'Criminal Law & Procedure 🔥', desc: '55 Documents' },

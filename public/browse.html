@@ -167,25 +167,29 @@
         <p class="block md:hidden text-xl text-brand-gray-700">Join thousands of students who use thinkswap to study and
           learn every day.</p>
 
-        <div class="max-w-[39rem] mx-auto md:mt-4">
-          <form class="relative w-full search-btn">
-            <div class="bg-white relative flex items-center justify-between gap-3 rounded-lg border border-brand-blue-500 p-4 sm:p-2 px-4">
-              <svg class="w-5 h-5 text-brand-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+        <form class="max-w-[35rem] flex items-center gap-4 mx-auto md:mt-4">
+          <div class="relative w-full search-btn">
+            <div class="bg-white relative flex items-center justify-between gap-3 rounded-lg border border-brand-blue-500 p-3 px-4">
+              <svg class="w-7 h-7 text-brand-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
-              <input type="search" class="block w-full text-sm text-gray-900 outline-none placeholder:text-sm"
-                placeholder="Search for your university or school certificate" required />
-
-              <button type="button" class="hidden sm:block common-btn font-semibold rounded-lg text-sm px-4 py-2">
-                Search
-              </button>
-            </div>
-
+              <input type="search" class="block w-full text-sm text-gray-900 outline-none placeholder:text-sm" placeholder="Search for your university or school certificate" required />
+              <div>
+                <select class="border-l border-gray-300 text-brand-dark-500 text-sm focus:border-blue-500 outline-none block w-full font-medium px-4">
+                  <option selected>Trending</option>
+                  <option value="us">Trending 2</option>
+                  <option value="int">Trending 3</option>
+                </select>
+              </div>
+              </div>
             <div class="grou-focus absolute left-0 -z-10 w-full h-full bg-brand-blue-500 rounded-lg"></div>
-          </form>
-        </div>
+          </div>
+          <button type="button" class="hidden sm:block common-btn font-semibold rounded-lg text-sm px-8 py-3">
+            Search
+          </button>
+        </form>
         <div
           class="max-w-7xl univer grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-auto mt-8 md:mt-14 pt-5 pb-10">
           <script>
@@ -204,9 +208,24 @@
         </button>
       </div>
     </section>
+
+    <!-- HSC - Higher School Certificate -->
+    <section class="bg-gradient-to-r to-brand-blue-400 from-brand-blue-500 px-4 md:px-6 py-20 md:pt-11 md:pb-8">
+      <div class="max-w-7xl flex flex-wrap items-center justify-between gap-y-9 gap-x-5 text-white text-center md:text-left mx-auto">
+        <h3 class="font-semibold text-heading-sm leading-[3.4rem]">
+          HSC - Higher <br class="hidden xl:block"> School Certificate
+        </h3>
+        <p class="max-w-3xl font-roboto">
+          Exams don't have to be as stressful as everyone says they are. Sure, it's boring when you're revising the same notes that you've already seen hundreds of times, but that is where Thinkswap's HSC study notes can
+          help you.
+          <br><br>
+          We've collected a huge amount of HSC notes from former year 11 and year 12 students, and you can use those suppliment the content you are already studying but with another point of view. This tricks the brain into thinking you're seeing all new stuff, even though it's the same topies presented in a different way.
+        </p>
+      </div>
+    </section>
   </main>
 
-  <script src="./js/index2.js"></script>
+  <script src="./js/browse.js"></script>
 </body>
 
 </html>
