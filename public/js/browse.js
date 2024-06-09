@@ -94,3 +94,43 @@ function threeSwap() {
 
 threeSwap()
 
+
+
+// swiper js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: true,
+    initialSlide: 2,
+    pagination: {
+      el: '.pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+    breakpoints: {
+      310: {
+        slidesPerView: 1.2,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 1.8,
+        spaceBetween: 10
+      },
+      1024: {
+        slidesPerView: 2.6,
+        spaceBetween: 10
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+    }
+  });
+
+  slider();
+});
