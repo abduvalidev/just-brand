@@ -154,77 +154,203 @@
     <section class="w-full px-4 md:px-6 py-16">
       <div class="text-center space-y-4">
         <div class="bg-brand-gray-50 sm:w-max border border-brand-blue-400/5 rounded-full mx-auto py-2.5 px-4">
-          <p class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
+          <p
+            class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
             Get instant study help
           </p>
         </div>
-        <h3 class="font-bold text-brand-dark-500 text-4xl md:text-heading-sm md:leading-[3.4rem] line-clamp-2">
-          <span class="hidden md:block">Browse study resources</span>
-          <span class="block md:hidden">
-            Search your documents here...
-          </span>
-        </h3>
-        <p class="block md:hidden text-xl text-brand-gray-700">Join thousands of students who use thinkswap to study and
-          learn every day.</p>
+        <h1
+          class="font-bold text-brand-dark-500 text-heading-sm md:text-5xl xl:text-heading-1 leading-[3.25rem] xl:leading-[5rem]">
+          Browse <span class="text-gradient">HSC</span> Subjects
+          </h3>
+          <p class="block md:hidden text-xl text-brand-gray-700">Join thousands of students who use thinkswap to study
+            and
+            learn every day.</p>
 
-        <form class="max-w-[35rem] flex items-center gap-4 mx-auto md:mt-4">
-          <div class="relative w-full search-btn">
-            <div class="bg-white relative flex items-center justify-between gap-3 rounded-lg border border-brand-blue-500 p-3 px-4">
-              <svg class="w-7 h-7 text-brand-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-              </svg>
-              <input type="search" class="block w-full text-sm text-gray-900 outline-none placeholder:text-sm" placeholder="Search for your university or school certificate" required />
-              <div>
-                <select class="border-l border-gray-300 text-brand-dark-500 text-sm focus:border-blue-500 outline-none block w-full font-medium px-4">
-                  <option selected>Trending</option>
-                  <option value="us">Trending 2</option>
-                  <option value="int">Trending 3</option>
-                </select>
+          <form class="max-w-[35rem] flex items-center gap-4 mx-auto md:mt-4">
+            <div class="relative w-full search-btn">
+              <div
+                class="bg-white relative flex items-center justify-between gap-3 rounded-lg border border-brand-blue-500 p-3 px-4">
+                <svg class="w-7 h-7 text-brand-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                </svg>
+                <input type="search" class="block w-full text-sm text-gray-900 outline-none placeholder:text-sm"
+                  placeholder="Search for your university or school certificate" required />
+                <div>
+                  <select
+                    class="border-l border-gray-300 text-brand-dark-500 text-sm focus:border-blue-500 outline-none block w-full font-medium px-4">
+                    <option selected>Trending</option>
+                    <option value="us">Trending 2</option>
+                    <option value="int">Trending 3</option>
+                  </select>
+                </div>
               </div>
-              </div>
-            <div class="grou-focus absolute left-0 -z-10 w-full h-full bg-brand-blue-500 rounded-lg"></div>
-          </div>
-          <button type="button" class="hidden sm:block common-btn font-semibold rounded-lg text-sm px-8 py-3">
-            Search
-          </button>
-        </form>
-        <div
-          class="max-w-7xl univer grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-auto mt-8 md:mt-14 pt-5 pb-10">
-          <script>
-            function cadrAdd(bgColor, queue, unNAme, desc) {
-              return `<a href="#" class="${bgColor} md:text-xl text-center sm:text-left transition duration-300 hover:bg-gray-100 hover:shadow-md rounded-lg p-4">
+              <div class="grou-focus absolute left-0 -z-10 w-full h-full bg-brand-blue-500 rounded-lg"></div>
+            </div>
+            <button type="button" class="hidden sm:block common-btn font-semibold rounded-lg text-sm px-8 py-3">
+              Search
+            </button>
+          </form>
+          <div
+            class="max-w-7xl univer grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-auto mt-8 md:mt-14 pt-5 pb-10">
+            <script>
+              function cadrAdd(bgColor, queue, unNAme, desc) {
+                return `<a href="#" class="${bgColor} md:text-xl text-center sm:text-left transition duration-300 hover:bg-gray-100 hover:shadow-md rounded-lg p-4">
                   <span class="font-display text-sm text-[#56586F]">LAWS1204</span>
                   <h4 class="font-display font-semibold text-lg text-brand-dark-500">${unNAme}</h4>
                   <p class="${queue} font-medium mt-1">${desc}</p>
               </a>`;
-            };
-          </script>
-        </div>
-        <button
-          class="toggleButton font-roboto w-full sm:w-auto block border border-brand-blue-500 text-brand-blue-500 rounded-lg transition duration-300 hover:bg-brand-blue-500 hover:text-white py-3.5 px-4 md:px-11 mx-auto">
-          View More
-        </button>
+              };
+            </script>
+          </div>
+          <button
+            class="toggleButton font-roboto w-full sm:w-auto block border border-brand-blue-500 text-brand-blue-500 rounded-lg transition duration-300 hover:bg-brand-blue-500 hover:text-white py-3.5 px-4 md:px-11 mx-auto">
+            View More
+          </button>
       </div>
     </section>
 
     <!-- HSC - Higher School Certificate -->
     <section class="bg-gradient-to-r to-brand-blue-400 from-brand-blue-500 px-4 md:px-6 py-20 md:pt-11 md:pb-8">
-      <div class="max-w-7xl flex flex-wrap items-center justify-between gap-y-9 gap-x-5 text-white text-center md:text-left mx-auto">
+      <div
+        class="max-w-7xl flex flex-wrap items-center justify-between gap-y-9 gap-x-5 text-white text-center md:text-left mx-auto">
         <h3 class="font-semibold text-heading-sm leading-[3.4rem]">
           HSC - Higher <br class="hidden xl:block"> School Certificate
         </h3>
         <p class="max-w-3xl font-roboto">
-          Exams don't have to be as stressful as everyone says they are. Sure, it's boring when you're revising the same notes that you've already seen hundreds of times, but that is where Thinkswap's HSC study notes can
+          Exams don't have to be as stressful as everyone says they are. Sure, it's boring when you're revising the same
+          notes that you've already seen hundreds of times, but that is where Thinkswap's HSC study notes can
           help you.
           <br><br>
-          We've collected a huge amount of HSC notes from former year 11 and year 12 students, and you can use those suppliment the content you are already studying but with another point of view. This tricks the brain into thinking you're seeing all new stuff, even though it's the same topies presented in a different way.
+          We've collected a huge amount of HSC notes from former year 11 and year 12 students, and you can use those
+          suppliment the content you are already studying but with another point of view. This tricks the brain into
+          thinking you're seeing all new stuff, even though it's the same topies presented in a different way.
         </p>
       </div>
     </section>
-  </main>
 
+    <!--  -->
+    <section class="bg-brand-gray-50 px-4 md:px-6 py-14 md:py-20">
+      <div class="max-w-7xl text-center mx-auto">
+        <p
+          class="bg-clip-text bg-gradient-to-l from-brand-blue-400 to-brand-blue-500 tracking-[7px] text-transparent text-xs md:text-sm font-semibold uppercase">
+          boost your grades
+        </p>
+        <h3 class="font-semibold text-brand-dark-500 text-4xl md:text-heading-sm md:leading-[3.4rem] mt-3">
+          How Thinkswap <span class="text-gradient">works</span>
+        </h3>
+
+        <div class="three-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center sm:text-left mt-6 md:mt-12">
+          <script>
+            function threeCard(swapImg, threeTitle, treeDesc) {
+              return `
+              <div class="cursor-pointer text-brand-dark-500 border border-b-4 border-brand-blue-500 rounded-lg space-y-4 px-4 md:px-6 py-6 md:py-8">
+                <div class="w-max mx-auto sm:mx-0">${swapImg}</div>              
+                <h5 class="text-xl md:text-3l">${threeTitle}</h5>
+                <p class="">${treeDesc}</p>`};
+          </script>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="bg-footer bg-cover bg-no-repeat py-14 md:py-24">
+      <div class="max-w-xl text-center mx-auto px-4 md:px-6">
+        <h3 class="font-semibold text-white text-4xl md:text-heading-sm md:leading-[3.4rem]">
+          Get instant study help
+        </h3>
+        <p class="text-white/70 mt-4">
+          Improve your grades with study resources contributed by classmates studying the same courses as you
+        </p>
+
+        <button class="w-full sm:w-max common-btn rounded-lg px-6 py-3.5 mx-auto mt-4">
+          Join Now
+        </button>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="px-4 md:px-6 py-8 md:py-16">
+    <div class="max-w-7xl font-roboto mx-auto">
+      <div class="flex flex-wrap items-center justify-center sm:justify-between gap-5 gap-y-9">
+        <a href="#">
+          <img class="h-12" src="./img/logo.svg" alt="">
+        </a>
+        <div class="flex items-center gap-8 text-[#6B7280] text-sm md:text-base">
+          <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current"
+            href="#">
+            About
+          </a>
+          <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current"
+            href="#">
+            Premium
+          </a>
+          <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current"
+            href="#">
+            Blog
+          </a>
+          <a class=" underline underline-offset-4 decoration-transparent transition duration-300 hover:decoration-current"
+            href="#">
+            Affiliate Program
+          </a>
+        </div>
+        <form class="w-full sm:w-auto sm:max-w-lg mx-auto lg:mx-0">
+          <div class="w-full flex">
+            <div class="w-full flex items-center gap-2 border rounded-lg rounded-r-none border-r-0 px-4 py-3">
+              <svg class="pointer-events-none" width="15" height="13" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.25 3.84424L7.1675 7.78924C7.414 7.9537 7.70368 8.04146 8 8.04146C8.29632 8.04146 8.586 7.9537 8.8325 7.78924L14.75 3.84424M2.75 12.0942H13.25C13.6478 12.0942 14.0294 11.9362 14.3107 11.6549C14.592 11.3736 14.75 10.9921 14.75 10.5942V3.09424C14.75 2.69641 14.592 2.31488 14.3107 2.03358C14.0294 1.75227 13.6478 1.59424 13.25 1.59424H2.75C2.35218 1.59424 1.97064 1.75227 1.68934 2.03358C1.40804 2.31488 1.25 2.69641 1.25 3.09424V10.5942C1.25 10.9921 1.40804 11.3736 1.68934 11.6549C1.97064 11.9362 2.35218 12.0942 2.75 12.0942Z"
+                  stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <input type="email" class="block w-full text-sm outline-none" placeholder="Enter your email" />
+            </div>
+            <button type="submit" class="common-btn !rounded-l-none text-sm px-4 py-2">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <div
+        class="flex flex-wrap-reverse items-center justify-center md:justify-between gap-5 md:gap-10 md:border-t mt-8 md:pt-8">
+        <p class="!font-inter text-[#6B7280]">© 2023 Thinkswap, Inc. All rights reserved.</p>
+        <!-- social icons -->
+        <div class="flex items-center gap-7">
+          <a class="text-[#9CA3AF] transition duration-300 hover:opacity-75" href="#">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.80078 14.3997C5.80078 14.3293 5.73047 14.259 5.625 14.259C5.51953 14.259 5.44922 14.3293 5.44922 14.3997C5.44922 14.47 5.51953 14.5403 5.625 14.5051C5.73047 14.5051 5.80078 14.47 5.80078 14.3997ZM4.71094 14.2239C4.71094 14.2942 4.78125 14.3997 4.88672 14.3997C4.95703 14.4348 5.0625 14.3997 5.09766 14.3293C5.09766 14.259 5.0625 14.1887 4.95703 14.1536C4.85156 14.1184 4.74609 14.1536 4.71094 14.2239ZM6.29297 14.1887C6.1875 14.1887 6.11719 14.259 6.11719 14.3645C6.11719 14.4348 6.22266 14.47 6.32812 14.4348C6.43359 14.3997 6.50391 14.3645 6.46875 14.2942C6.46875 14.2239 6.36328 14.1536 6.29297 14.1887ZM8.57812 0.688721C3.72656 0.688721 0 4.41528 0 9.26685C0 13.1692 2.42578 16.509 5.94141 17.7043C6.39844 17.7747 6.53906 17.4934 6.53906 17.2825C6.53906 17.0364 6.53906 15.8411 6.53906 15.1028C6.53906 15.1028 4.07812 15.6301 3.55078 14.0481C3.55078 14.0481 3.16406 13.0286 2.60156 12.7825C2.60156 12.7825 1.79297 12.22 2.63672 12.22C2.63672 12.22 3.51562 12.2903 4.00781 13.134C4.78125 14.5051 6.04688 14.1184 6.57422 13.8723C6.64453 13.3098 6.85547 12.9231 7.13672 12.677C5.16797 12.4661 3.16406 12.1848 3.16406 8.80981C3.16406 7.82544 3.44531 7.36841 4.00781 6.7356C3.90234 6.4895 3.62109 5.57544 4.11328 4.34497C4.81641 4.13403 6.53906 5.29419 6.53906 5.29419C7.24219 5.08325 7.98047 5.01294 8.71875 5.01294C9.49219 5.01294 10.2305 5.08325 10.9336 5.29419C10.9336 5.29419 12.6211 4.09888 13.3594 4.34497C13.8516 5.57544 13.5352 6.4895 13.4648 6.7356C14.0273 7.36841 14.3789 7.82544 14.3789 8.80981C14.3789 12.1848 12.3047 12.4661 10.3359 12.677C10.6523 12.9583 10.9336 13.4856 10.9336 14.3293C10.9336 15.4895 10.8984 16.9661 10.8984 17.2473C10.8984 17.4934 11.0742 17.7747 11.5312 17.6692C15.0469 16.509 17.4375 13.1692 17.4375 9.26685C17.4375 4.41528 13.4648 0.688721 8.57812 0.688721ZM3.41016 12.8176C3.33984 12.8528 3.375 12.9583 3.41016 13.0286C3.48047 13.0637 3.55078 13.0989 3.62109 13.0637C3.65625 13.0286 3.65625 12.9231 3.58594 12.8528C3.51562 12.8176 3.44531 12.7825 3.41016 12.8176ZM3.02344 12.5364C2.98828 12.6067 3.02344 12.6418 3.09375 12.677C3.16406 12.7122 3.23438 12.7122 3.26953 12.6418C3.26953 12.6067 3.23438 12.5715 3.16406 12.5364C3.09375 12.5012 3.05859 12.5012 3.02344 12.5364ZM4.14844 13.802C4.11328 13.8372 4.11328 13.9426 4.21875 14.0129C4.28906 14.0833 4.39453 14.1184 4.42969 14.0481C4.46484 14.0129 4.46484 13.9075 4.39453 13.8372C4.32422 13.7668 4.21875 13.7317 4.14844 13.802ZM3.76172 13.2747C3.69141 13.3098 3.69141 13.4153 3.76172 13.4856C3.83203 13.5559 3.90234 13.5911 3.97266 13.5559C4.00781 13.5208 4.00781 13.4153 3.97266 13.345C3.90234 13.2747 3.83203 13.2395 3.76172 13.2747Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a class="text-[#9CA3AF] transition duration-300 hover:opacity-75" href="#">
+            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1367 4.30981C16.8398 3.78247 17.4727 3.14966 17.9648 2.41138C17.332 2.69263 16.5938 2.90356 15.8555 2.97388C16.6289 2.51685 17.1914 1.81372 17.4727 0.934814C16.7695 1.35669 15.9609 1.6731 15.1523 1.84888C14.4492 1.1106 13.5 0.688721 12.4453 0.688721C10.4062 0.688721 8.75391 2.34106 8.75391 4.38013C8.75391 4.66138 8.78906 4.94263 8.85938 5.22388C5.80078 5.0481 3.05859 3.57153 1.23047 1.35669C0.914062 1.88403 0.738281 2.51685 0.738281 3.21997C0.738281 4.4856 1.37109 5.6106 2.39062 6.27856C1.79297 6.24341 1.19531 6.10278 0.703125 5.82153V5.85669C0.703125 7.64966 1.96875 9.12622 3.65625 9.47778C3.375 9.5481 3.02344 9.61841 2.70703 9.61841C2.46094 9.61841 2.25 9.58325 2.00391 9.5481C2.46094 11.0247 3.83203 12.0793 5.44922 12.1145C4.18359 13.0989 2.60156 13.6965 0.878906 13.6965C0.5625 13.6965 0.28125 13.6614 0 13.6262C1.61719 14.6809 3.55078 15.2786 5.66016 15.2786C12.4453 15.2786 16.1367 9.68872 16.1367 4.802C16.1367 4.62622 16.1367 4.4856 16.1367 4.30981Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a class="text-[#9CA3AF] transition duration-300 hover:opacity-75" href="#">
+            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.71875 0.688721C3.90234 0.688721 0 4.62622 0 9.40747C0 14.2239 3.90234 18.1262 8.71875 18.1262C13.5 18.1262 17.4375 14.2239 17.4375 9.40747C17.4375 4.62622 13.5 0.688721 8.71875 0.688721ZM14.4492 4.73169C15.5039 5.99731 16.1367 7.6145 16.1367 9.37231C15.8906 9.302 13.4297 8.80981 10.9688 9.12622C10.7578 8.63403 10.582 8.21216 10.3008 7.64966C13.0781 6.52466 14.3086 4.94263 14.4492 4.73169ZM13.6406 3.85278C13.5 4.06372 12.375 5.57544 9.73828 6.55981C8.50781 4.30981 7.17188 2.48169 6.96094 2.20044C9.31641 1.63794 11.8125 2.2356 13.6406 3.85278ZM5.51953 2.69263C5.73047 2.97388 7.06641 4.802 8.29688 7.01685C4.81641 7.93091 1.75781 7.93091 1.40625 7.89575C1.89844 5.6106 3.44531 3.677 5.51953 2.69263ZM1.26562 9.44263C1.26562 9.37231 1.26562 9.302 1.26562 9.19653C1.58203 9.23169 5.20312 9.26685 8.89453 8.14185C9.14062 8.56372 9.31641 8.9856 9.52734 9.40747C6.82031 10.1809 4.35938 12.3606 3.16406 14.3997C1.96875 13.0989 1.26562 11.3411 1.26562 9.44263ZM4.11328 15.3137C4.92188 13.7317 7.03125 11.6575 10.0195 10.6379C11.0742 13.345 11.4961 15.6301 11.6016 16.2981C9.21094 17.3176 6.32812 17.0364 4.11328 15.3137ZM12.8672 15.595C12.7969 15.1731 12.375 12.9934 11.4258 10.2864C13.7461 9.93481 15.7852 10.5325 16.0664 10.6028C15.7148 12.677 14.5195 14.47 12.8672 15.595Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a class="text-[#9CA3AF] transition duration-300 hover:opacity-75" href="#">
+            <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.03516 10.8137L9.52734 7.57935H6.39844V5.46997C6.39844 4.55591 6.82031 3.71216 8.22656 3.71216H9.66797V0.934814C9.66797 0.934814 8.36719 0.688721 7.13672 0.688721C4.57031 0.688721 2.88281 2.27075 2.88281 5.08325V7.57935H0V10.8137H2.88281V18.6887H6.39844V10.8137H9.03516Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="./js/browse.js"></script>
 </body>
 
